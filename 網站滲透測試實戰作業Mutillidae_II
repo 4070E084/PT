@@ -1,0 +1,191 @@
+網站滲透測試實戰作業
+
+完成底下OWASP Mutillidae II的滲透測試
+
+並確實清楚OWASP 2013 Top 10的十大網站漏洞
+
+等有平台支援OWASP 2017 Top 10再比較兩者差異
+
+
+OWASP
+
+Open Web Application Security Project
+
+成立宗旨：
+
+OWASP(開放Web軟體安全計畫 – Open Web Application Security Project)是一個開放社群、非營利性組織，
+其主要目標是研議協助解決Web軟體安全之標準、工具與技術文件，
+長期致力於協助政府或企業瞭解並改善網頁應用程式與網頁服務的安全性。
+
+OWASP TOP 10是他們目前手頭上眾多計劃中最知名的一個，
+內容為他們認為網頁應用程式上最重要且嚴重的10大弱點且進行排名，
+2013年版本詳細的內容如下(以下由第10名介紹到第1名)：
+http://mmdays.com/2013/12/11/owasp_top_10/
+
+
+A10-Unvalidated Redirects and Forwards (未經驗證的重新導向與轉送)：
+
+網站有在網址列裡使用重新導向功能
+
+攻擊範例：http://www.example.com/redirect.jsp?url=evil.com
+
+有心人士可以利用這個功能來製作釣魚網站，將網址掛在你的網域下，實際上是連到其他網站去。
+如果是有高知名度且受到民眾信任的網域，那麼就非常有可能造成一般民眾的受害。
+
+攻擊範例：http://www.example.com/boring.jsp?fwd=admin.jsp
+
+第二個範例則是會跳到這個網站內的其他位址，去進行一些使用者未授權進行的行為。
+
+防範方式：不要用這個功能，一定要用的話一定要對傳進來的參數進行驗證。
+
+[測試作業]OWASP Mutillidae II的A10->credits
+
+
+A9-Using Components with Known Vulnerabilities(使用已知漏洞元件)：
+
+網站使用的第三方元件件或是函式庫有問題的，就有可能會受到攻擊。
+
+[測試作業]OWASP Mutillidae II的A9->CBC Bit-flipping
+
+
+A8 – Cross Site Request Forgery (CSRF) (跨站冒名請求)：
+
+惡意的HTTP指令被當成合法的指令來執行，例如
+<img src=”http://example.com/app/transferFunds?amount=1500&destinationAccount=attackersAcct#” width=”0″ height=”0″ />
+
+防範方式：在使用者在input欄位裡輸入資料時加上token，來避免使用者偷渡惡意的指令進入網站；
+並且使用CAPTCHA等驗證方式來防止人為的大量散布惡意連結。
+
+[測試作業]OWASP Mutillidae II的A8->Poll Question
+
+
+A7 – Missing Function Level Access Control (缺少功能級別的存取控制)：
+
+惡意入侵者可能會嘗試著去試你的網站上其他網頁的網址，如果沒對每個頁面進行存取控制權限的要求的話，
+如果直接被攻擊者嘗試到你的網址，那他可以直接癱瘓你的整台主機。
+
+防範方式：可以先預設每個網頁都要辨識身分後才能存取，並且做好認證管制，並確認每個頁面都有做好權限的控制，
+沒有按鈕可以連結過去的頁面並不代表攻擊者不會手動連過去，要特別注意這一點。
+
+[測試作業]OWASP Mutillidae II的A7->"secret" administrator pages
+
+
+A6 – Sensitive Data Exposure (敏感資料暴露)：
+
+這部分主要有兩個問題，
+一個是網站在與使用者傳輸敏感資料時未使用SSL加密連線，導致傳輸有可能被攔截竊聽造成使用者的帳密被盜用；
+第二個問題是敏感資料例(如帳密)時被揭露。
+
+防範方式：通通使用SSL安全連線來傳輸；
+密碼必須使用不可逆的演算法加密後再存在資料庫裡，登入時只需比對加密後的結果是否相同。
+
+[測試作業]OWASP Mutillidae II的A6->robots.txt
+
+
+A5 – Security Misconfiguration (不當的安全組態設定)：
+
+常見問題::
+第一，未刪除或更改所使用套件的預設帳密，攻擊者可以輕而易舉地透過嘗試法直接入侵；
+
+第二，Directory listing未關閉，攻擊者可以透過此功能輕易地找出所有網站上的檔案，並且獲知你的原始碼；
+
+第三，錯誤訊息直接回傳在使用者頁面上，此舉會透漏許多額外的訊息給予攻擊者；
+
+第四，未刪除套件所附的範例應用程式，有許多的範例都是有漏洞的。
+
+防範方式：軟體和作業系統更新至最新的patch；不需要的port與頁面和服務，通通關閉；預設的帳密務必要進行更改。
+
+[測試作業]OWASP Mutillidae II的A5->unrestrict file upload
+
+上傳webshell
+
+[測試作業]DVWA的不同等級的file upload攻擊
+
+
+A4 – Insecure Direct Object References (不安全的物件參考)：
+
+攻擊者利用網站自身的檔案讀取功能，去任意的讀取敏感資料或重要檔案，進而分析這些檔案後，達到攻破網站的目的，
+
+這個問題主要的部分在於網頁編寫時所使用的原始碼裡沒有去驗證使用者所投入的字串是否合法，如以下的範例：
+
+String query = “SELECT * FROM accts WHERE account = ?”;
+
+PreparedStatement pstmt = connection.prepareStatement(query , … );
+
+pstmt.setString( 1, request.getParameter(“acct”));
+
+ResultSet results = pstmt.executeQuery( );
+
+這是一段有問題的程式碼，攻擊者可能可以透過修改下列那一行網址中紅字的部分，來任意取得他人帳戶的資料。
+
+http://example.com/app/accountInfo?acct=notmyacct
+
+防範方法：針對網頁裡的每個物件設定正確的存取權限限制，並且在存取時確認使用者是否真的有權限存取。
+
+[測試作業]OWASP Mutillidae II的A4->Text file viewer
+
+A3 – Cross-Site Scripting(XSS) (跨站腳本程式攻擊)：
+
+這是目前最流行的攻擊方式之一
+
+
+使用者先與伺服器進行密碼的驗證拿到了cookie，這時執行了攻擊者埋入在頁面中有問題的script
+(一樣是透過Web2.0型的網頁上的互動留言等等功能)就可以順利竊取使用者的cookie
+然後就可以假冒他人身分做任何事情啦！
+
+防範方法：不管是使用者輸入還是頁面輸出都應該要有檢查的機制；
+可以使用白名單機制；
+過濾掉有問題的字串(例如PHP可以使用htmlentities)
+
+ 
+[測試作業]OWASP Mutillidae II的A3->Add to your blog
+
+[測試作業]OWASP Mutillidae II的A3->HTML 5 Web Storage
+
+
+
+A2 – Broken Authentication and Session Management (失效的驗證與連線管理)：
+
+Broken Authentication Management
+
+[測試作業]OWASP Mutillidae II的A2->Authentication bypass->via cookies->login
+
+Broken Session Management與針對Session的攻擊
+
+Session Sniffing
+
+Session fixation 
+
+Session hijacking 
+is simply the act of stealing an existing, valid session cookie. 
+Most commonly through sniffing network traffic 
+(a MITM attack), but also through any other ways that a session ID may be leaked.
+
+
+
+
+A1 – Injection (注入攻擊)：
+
+這是一大類的攻擊模式,針對不同資訊進行注入攻擊
+
+Sqli==SQL Injection可以說是最常見也最有名的問題
+Command injection
+LDAP injection
+XPATH injection
+
+see維基上SQL Injection條目裡的範例做說明：
+
+
+攻擊者在網頁裡任何可以輸入資料的地方試著去猜想設計者背後的語法撰寫方式，
+並去猜測完整的command應該會長成怎麼樣，還有推測欄位數，table的名字，SQL的版本資訊，試著去拼湊輸入一條SQL指令，
+輕則刪掉資料庫，重則竊取全部的個資。可以說是任何一個撰寫互動式網頁的開發者首先也必要處理的問題。
+
+防範方式：錯誤的訊息不應該顯示給管理員以外的人，以防攻擊者得到更多有用的資訊；
+控管使用者的帳號權限；
+嚴密檢查使用者輸入的任何字串，檢查檢查再檢查
+
+[測試作業]OWASP Mutillidae II的A1->SQLiExtract Data->user info(SQL)
+
+[測試作業]OWASP Mutillidae II的A1->command inhjection->SQLi Bypass Authentication-> login
+
+[測試作業]OWASP Mutillidae II的A1->command inhjection->DNS lookup
