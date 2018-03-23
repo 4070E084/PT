@@ -1,0 +1,25 @@
+# PENETRATION TESTING WITH KALI LINUX
+
+OVERVIEW
+Are you ready to Try Harder?
+
+Penetration Testing with Kali Linux (PWK) is the industry standard for practical, hands-on, 
+information security training. Created and taught by the creators of Kali Linux, 
+this course is designed to provide the knowledge that you need for a career 
+in penetration testing. 
+
+Guiding you from the basics of automation of standard security tasks 
+all the way to discovering, fuzzing and writing your own buffer overflow, 
+this course provides you with not just more ""tool usage"" instruction. 
+
+Instead, it details the underlying concepts of what you need to know to for a successful career in penetration testing.
+
+Topics covered in this course include:
+Automating your environment with scripting
+Attack surface identification through passive and active information gathering
+Identifying and writing your first Windows exploit
+Safe identification, modification, and use of public exploits
+Data exfiltration and advanced tunneling techniques
+Client side and privilege escalation attacks
+Introduction to web application attacks
+Use of Metasploit in a penetration test
