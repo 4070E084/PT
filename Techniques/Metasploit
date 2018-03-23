@@ -1,0 +1,23 @@
+ABILITIES INC - METASPLOIT MASTERY
+
+https://www.blackhat.com/us-18/training/schedule/#abilities-inc---metasploit-mastery-9807
+
+OVERVIEW
+Egypt and Mubix have combined their knowledge of the innards of the Metasploit Framework and Adversarial Red Teaming to introduce one of the most intense classes on attacking networks. Coverage on everything from hacking up your own plugins to owning a whole networking without drawing a single drop of buffer overflow blood. This surgical strike upon your frontal lobe will leave you whistling ruby and spurting root shellz from your veins. 
+
+Course Syllabus: 
+
+Day 1:
+Setup and Installation
+Demo! Pwning the World
+Ruby crash course
+Design and Architecture
+Lunch/Framework Basic Usage
+Aux Modules
+Exploit Modules
+
+Day 2:
+Post exploitation
+Post Modules
+Question and Answer
+CTF!
