@@ -1,0 +1,80 @@
+# THE SECURITY AUTOMATION LAB
+
+he security industry is running fast towards security automation to increase the capability and capacity of security teams so they can effectively and efficiently stay on top of the constantly evolving threats, attacks and security breaches that occur every day!
+
+We will take your security capabilities from "Tedius" to "Turbo" in 2 days flat! Learn how to implement streamlined security operations and optimise budgets through security automation, including:
+
+- Automating the collection and analysis of internal and external intelligence data
+- Automating targeted attacks to more frequently and efficiently identify security weaknesses and attack techniques
+- Automating security testing of applications to enforce a continuous security baseline
+- Automating incident response processes, data collection, analysis and response to efficiently contain security breaches
+- Automating preventative and responsive controls through integration with security devices and infrastructure
+- Automating the generation of real-time security visualisation dashboards, threat reports, and alerts for critical operational security team actions
+- Automating the orchestration of end-to-end intelligence and security controls and analysis for immediate capability enhancements
+
+Students are provided with their own dedicated cloud-based Security Automation environment consisting of servers and applications with a range of vulnerabilities that need protection from an onslaught of ongoing attacks and security breaches. The aim of this course is to teach students how to automate the discovery and protection of security weaknesses whilst automatically responding to incidents and gaining visibility into the areas where further security automation can be enhanced.
+
+Day 1:
+
+- Introductions
+- What is the demand for security automation?
+- Other Industries' Automation Achievements
+- Security Automation and Orchestration Introduction
+- Difference between Automation and Orchestration
+- Business Benefits from Security Automation
+- Automation in Different Organisations
+- Automatable Security Operations Areas
+Lab 1 - Virtual Security Automation Environment
+Lab 2 - Security Automation Tools
+- Automated Intelligence Collection and Analysis
+- External Intelligence Types and Sources
+- Internal Intelligence Types and Sources
+- Intelligence Collection Techniques
+- Transformation of Intelligence Data
+- Aggregation, Correlation and Analysis of Intelligence Data
+Lab 3 - Orchestration and Automation of External Intelligence Collection and Transformation
+Lab 4 - Orchestration and Automation of Internal Intelligence Collection and Transformation
+Lab 5 - Automated Correlation of Intelligence Data
+- Automated Penetration Testing as Intelligence Collection
+- Orchestrating Repeatable Penetration Testing
+- Automating the Prioritisation of Vulnerability Mitigation
+- Integrating Penetration Test Results with Ticketing Systems
+- Integrating Automated Security Testing into CI/CD Systems
+Lab 6 - Automated Exploit Identification for Vulnerability Prioritisation
+Lab 7 - Automated Internal Penetration Testing
+Lab 8 - Orchestrating Automated CI/CD Security Testing
+
+Day 2:
+
+- Automated Incident Detection Techniques
+- Incident Detection through Intelligence Correlation
+- Automated Incident Investigation Intelligence Collection
+- Types of Incident Investigation Data
+- Automated Incident Investigation Intelligence Analysis
+- Automatically Extracting Indicators of Compromise
+- Automatically Searching for Indicators of Compromise
+- Automated Incident Response Actions
+Lab 9 - Automated Incident Detection
+Lab 10 - Automated Incident Data Collection
+Lab 11 - Automated Extraction of IoCs
+Lab 12 - Automated Incident Response Actions
+- Automated Security Infrastructure Orchestration
+- Types of Intelligence and Security Infrastructure
+- Automating Integration of Intelligence Data into Security Infrastructure
+Lab 13 - Automated Security and Intelligence Infrastructure Orchestration
+- Operational Security Team Communication Types (Slack, Jira, etc)
+- Automating Security Alerts into Communication Channels
+- Automating Real-Time Charts and Visualisations
+- Automating Real-Time Tables
+- Automating Real-Time Dashboards
+- Automating Security Reporting - Intelligence
+- Automating Security Reporting - Vulnerability Tracking
+- Automating Security Reporting - Incident Response
+- Automating Security Reporting - Infrastructure Events
+- Automating Security Reporting - Automation Events
+Lab 14 - Automating Security Alerts to Chat Channels
+Lab 15 - Orchestrating Real-Time Dashboards
+Lab 16 - Automated Security Reporting
+- Automated Security Operations Orchestration
+- Chaining Workflows for Repeatable Security Orchestration
+Bonus Lab 17 - Chaining Workflows for Orchestrating Automation
