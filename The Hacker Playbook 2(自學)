@@ -1,0 +1,193 @@
+The Hacker Playbook 2 中文版：滲透測試實戰 (The Hacker Playbook 2: Practical Guide to Penetration Testing) 
+Peter Kim 著、孫勇 譯
+出版商:博碩 出版日期:2017-11-29
+
+Chapter 1｜賽前準備—安裝
+1.1 建立測試環境
+1.2 建立一個網域
+1.3 建立其他的伺服器
+1.4 實踐
+1.5 建置滲透測試環境
+1.5.1 安裝一個滲透測試環境
+1.5.2 硬體
+1.5.3 開源軟體和商業軟體
+1.5.4 建立平台
+1.5.5 建置 Kali Linux
+1.5.6 Windows 虛擬機
+1.5.7 設置 Windows 環境
+1.5.8 啟動 PowerShell
+1.5.9 Easy-P
+1.6 學習
+1.6.1 Metasploitable 2
+1.6.2 二進位利用
+
+
+Chapter 2 掃描網路
+2.1 被動資訊搜尋—開源情報（OSINT）
+2.1.1 Recon-NG（Kali Linux）
+2.1.2 Discover 腳本（Kali Linux）
+2.1.3 SpiderFoot（Kali Linux）
+
+2.2 建立密碼字典
+2.2.1 Wordhound（Kali Linux）
+2.2.2 BruteScrape （Kali Linux）
+2.2.3 使用攻陷密碼列表來尋找郵件位址和憑證
+2.2.4 Gitrob–Github 分析（Kali Linux）
+2.2.5 開源情報資料蒐集
+
+2.3 外部或內部主動式資訊蒐集
+2.3.1 Masscan（Kali Linux）
+2.3.2 SPARTA（Kali Linux）
+2.3.3 HTTP Screenshot（Kali Linux）
+
+2.4 漏洞掃描
+2.4.1 Rapid7 Nexpose/Tenable Nessus（Kali/Windows/OS X）
+2.4.2 OpenVAS（Kali）
+
+2.5 網站應用程式掃描
+2.5.1 網站掃描程序
+2.5.2 網站應用程式掃描
+2.5.3 OWASP Zap Proxy（Kali Linux/Windows/OS X）
+
+2.6 分析 Nessus、Nmap 和 Burp
+
+
+Chapter 3｜攻擊(帶球—漏洞利用)
+3.1 Metasploit（Windows/Kali Linux）
+3.1.1 從 Kali 作業系統的終端—初始化和啟動 Metasploit 工具
+3.1.2 使用通用設定命令執行 Metasploit
+3.1.3 執行 Metasploit—漏洞利用後續操作或其他
+3.1.4 使用 Metasploit 平台利用 MS08-067 漏洞
+3.2 腳本
+>>>>>WarFTP 例子
+3.3 印表機
+3.4 心臟出血
+3.5 Shellshock
+>>>>>Shellshock 實驗環境
+3.6 匯出 Git 程式碼庫（Kali Linux）
+3.7 Nosqlmap（Kali Linux） 
+>>>>>執行 Nosqlmap
+3.8 彈性搜尋（Kali Linux）
+>>>>>彈性搜尋測試環境
+
+
+Chapter 4 網站應用程式的人工偵測技術
+4.1 網站應用程式滲透測試
+4.1.1 SQL 注入
+4.1.2 手工 SQL 注入
+4.1.3 跨站腳本（XSS）
+4.1.4 跨站請求偽造（CSRF）
+4.1.5 對話權杖
+4.1.6 其他模糊測試/輸入驗證
+4.1.7 其他 OWASP 前十大漏洞
+4.1.8 功能/業務邏輯測試
+
+Chapter 5｜內網滲透測試
+5.1 無憑證條件下的網路滲透
+5.1.1 Responder.py（Kali Linux）
+5.1.2 ARP 欺騙
+5.1.3 Cain and Abel（Windows）
+5.1.4 Ettercap（Kali Linux）
+5.1.5 後門工廠代理（Kali Linux）
+5.1.6 ARP 欺騙後攻擊操作
+5.2 利用任意網域憑證（非管理員權限）
+5.2.1 展開系統偵察
+5.2.2 群組策略偏好設定
+5.2.3 關於漏洞利用後期的一點提示
+5.2.4 權限提升
+5.3 擁有本地管理員權限或網域管理員權限
+5.3.1 使用憑證和 psexec 滲透整個網路
+5.3.2 使用 psexec 工具實作在多主機執行命令（Kali Linux）
+5.3.3 使用WMI 工具進行橫向滲透（Windows）
+5.3.4 Kerberos - MS14-068
+5.3.5 傳遞票據攻擊（pass-the-ticket）
+5.3.6 利用 PostgreSQL 漏洞進行橫向滲透
+5.3.7 取得快取憑證
+5.4 攻擊網域控制站
+5.4.1 SMBExec（Kali Linux）
+5.4.2 psexec_ntdsgrab（Kali Linux）
+5.5 持續控制
+5.5.1 Veil 和 PowerShell
+5.5.2 使用計劃任務實作持續控制
+5.5.3 金票據
+5.5.4 萬能金鑰
+5.5.5 黏滯鍵
+
+Chapter 6｜助攻—社交工程學
+6.1 近似網域名稱
+6.1.1 SMTP 攻擊
+6.1.2 SSH 攻擊
+6.2 網路釣魚
+>>>>>手工網路釣魚程式碼（Kali Linux）
+6.3 網路釣魚報告
+
+Chapter 7｜短傳—實體存取攻擊
+7.1 無線網路滲透
+7.1.1 被動識別和偵察
+7.1.2 主動攻擊
+7.2 識別證複製（badge cloning）
+>>>>>在Kali Nethunter 中執行
+7.3 Kon-boot（Windows/OS X）
+7.3.1 Windows
+7.3.2 OS X
+7.4 滲透測試便攜裝置—Raspberry Pi 2
+7.5 Rubber Ducky
+
+Chapter 8｜四分衛突破—規避防毒軟體偵測
+8.1 規避防毒軟體偵測
+8.1.1 後門工廠（Kali Linux）
+8.1.2 WCE 規避防毒軟體偵測（Windows） 
+8.1.3 Veil（Kali Linux）
+8.1.4 SMBExec（Kali Linux）
+8.1.5 peCloak.py（Windows）
+8.1.6 Python
+8.2 其他鍵盤記錄工具
+8.2.1 使用 Nishang 下的鍵盤記錄工具
+8.2.2 使用 PowerSploit 工具中的鍵盤記錄
+
+Chapter 9｜特勤組—破解、利用和技巧
+9.1 密碼破解
+9.1.1 John the Ripper（Windows/Kali Linux/OS X）
+9.1.2 oclHashcat（Windows/Kali Linux）
+9.2 漏洞搜尋
+9.2.1 searchsploit（Kali Linux）
+9.2.2 BugTraq
+9.2.3 Exploit-DB
+9.2.4 查詢 Metasploit
+9.3 一些小技巧
+9.3.1 Metasploit 的 RC 腳本
+9.3.2 Windows 側錄
+9.3.3 繞過 UAC
+9.3.4 Kali Linux NetHunter
+9.3.5 產生一個自訂反向 shell
+9.3.6 規避應用級防火牆
+9.3.7 PowerShell
+9.3.8 Windows 7/8 上傳檔案到主機
+9.3.9 樞紐測試（pivoting）
+9.4 商業軟體
+9.4.1 Cobalt Strike
+9.4.2 Immunity Canvas（Kali Linux/OS X/Windows）
+9.4.3 Core Impact
+
+Chapter 10｜兩分鐘的操練—從零變成英雄
+10.1 十碼線
+10.2 二十碼線
+10.3 三十碼線
+10.4 五十碼線
+10.5 七十碼線
+10.6 八十碼線
+10.7 終點線
+10.8 達陣！達陣！達陣！
+
+Chapter 11｜賽後—分析報告
+
+Chapter 12｜繼續教育
+12.1 漏洞懸賞網站
+12.2 主要的資安會議
+12.3 培訓課程
+12.4 免費培訓
+12.5 奪旗挑戰
+12.6 保持更新
+12.6.1 郵件列表
+12.6.2 部落格
+12.7 跟壞小子學習
