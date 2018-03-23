@@ -1,0 +1,13 @@
+
+
+
+THE IDA PRO ADVANCED COURSE
+Presenter: chris eagle
+
+WHAT STUDENTS SHOULD BRING
+Students should bring their own laptops with an installed version of Ida Starter or Ida Professional 7.0 or greater
+(available for Windows, Mac, or Linux). Also required are Adobe Reader or other pdf reader, unzip utility (.zip .gz .tgz) 
+and an appropriate 64-bit build environment for their version of Ida (Visual Studio C++ 2013 (or newer) for Windows, 
+g++/make for Linux/Mac). Laptops should be pre-configured with a working 64-bit Python 2.7 installation. 
+No guarantee is made that students attempting to complete the course using older or demo versions of Ida will be able to 
+complete every exercise.
