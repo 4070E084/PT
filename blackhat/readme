@@ -1,12 +1,552 @@
+crash course速成課程
+
+四天課程
+
+A PRACTICAL APPROACH TO MALWARE ANALYSIS AND MEMORY FORENSICS - 2018 EDITION
+Presenter: monnappa & sajan shetty
+
+
+ATT&CKING THE ENTERPRISE - A PURPLE TEAM'S APPROACH TO PROTECTING YOUR ENVIRONMENT
+Presenter: ryan linn
+
+ACTIVE DEFENSE, OFFENSIVE COUNTERMEASURES AND HACKING BACK
+Presenter: john strand - black hills information security
+
+ADVANCED INFRASTRUCTURE HACKING - 2018 EDITION: 4 DAY
+Presenter: notsosecure
+
+ADVANCED PRACTICAL SOCIAL ENGINEERING
+Presenter: social-engineer, llc
+
+ADVANCED WEB ATTACKS AND EXPLOITATION
+Presenter: offensive security
+
+ADVANCED WINDOWS EXPLOITATION
+Presenter: offensive security
+
+ADVERSARY TACTICS: POWERSHELL
+Presenter: specterops
+
+ADVERSARY TACTICS: RED TEAM OPS
+Presenter: specterops
+
+APPLIED DEFENSE AND OFFENSE: UNDERSTANDING ATTACKERS THROUGH RED TEAM TACTICS - PURPLE TEAMS
+Presenter: trustedsec
+
+ASSESSING AND EXPLOITING CONTROL SYSTEMS AND IOT
+Presenter: justin searle, inguardians
+
+DIGITAL FORENSICS & INCIDENT RESPONSE
+Presenter: andrew case & jamie levy
+
+FULL SCOPE SOCIAL ENGINEERING AND PHYSICAL SECURITY
+Presenter: snowfensive, llc
+
+HACKING FIRMWARE & HARDWARE: SOFTWARE EXPLOITATION VIA HARDWARE EXPLOITATION
+Presenter: senrio inc. & xipiter llc
 
 IN-DEPTH CODE INJECTION FOR ATTACKERS, DEFENDERS, AND DEVELOPERS
+Presenter: jake williams
+
+INTRODUCTORY BOOTCAMP(集訓) ON SOFTWARE REVERSE-ENGINEERING, CRACKING, AND COUNTER-MEASURES
+Presenter: dazzlecatduo
+
+MALWARE ANALYSIS MASTER CLASS
+Presenter: flare team of mandiant, a fireeye company
+
+PENETRATION TESTING WITH KALI LINUX
+Presenter: offensive security
+
+PENTESTING AND EXPLOITING HIGHLY SECURED ENTERPRISE NETWORKS
+Presenter: vikram salunke
+
+PHYSICAL PENETRATION & ELECTRONIC ACCESS CONTROL HACKING
+Presenter: the core group
+
+PRACTICAL ANDROID EXPLOITATION
+Presenter: senrio inc. & xipiter llc
+
+PRACTICAL DEVSECOPS - CONTINUOUS SECURITY IN THE AGE OF CLOUD
+Presenter: mohammed a. imran
+
+PRACTICAL INCIDENT RESPONSE WITH DIGITAL FORENSICS & MALWARE ANALYSIS
+Presenter: internet initiative japan inc.
+
+RISK MANAGEMENT FRAMEWORK (CNSS-4016)
+Presenter: information assurance associates (ia2)
+
+SYSTEM FIRMWARE ATTACK AND DEFENSE FOR THE ENTERPRISE
+Presenter: eclypsium inc. & intel corporation
+
+WINDOWS KERNEL ROOTKIT TECHNIQUES
+Presenter: t.roy, codemachine
+
+
+--------------------------------------------------------------------------
+兩天課程
+
+A GUIDED TOUR OF EMBEDDED SOFTWARE HACKS
+
+[讚]A GUIDE TO THREAT HUNTING UTILIZING THE ELK STACK AND MACHINE LEARNING
+
+-------------------------------------------------------------------------------------
+[基礎課程]ABILITIES INC - METASPLOIT BASICS
+STUDENT REQUIREMENTS
+Basic understanding of Metasploit
+TCP/IP basics
+Network configuration in Windows and Linux / OSX
+
+WHAT STUDENTS SHOULD BRING
+Laptop with 20 GB minimum free space
+Ethernet adapter
+Virtualization software capable of running VMDKs
+A fresh Kali Linux VM, and a Windows VM (Metasploitable3)
+A text editor you are comfortable writing code in (instructors recommend Sublime Text 3 or Vim)
+Metasploitable2 VM downloaded and functional:
+http://sourceforge.net/projects/metasploitable/files/Metasploitable2/
+-------------------------------------------------------------------------------------
+[基礎課程]HANDS-ON HACKING FUNDAMENTALS
+Overview
+Information security fundamentals
+Working with a command-line interface (Linux and Windows)
+An introduction to Kali Linux
+Computer networking fundamentals
+Discovering vulnerabilities & exploits: how to find, test and use them
+Exploiting vulnerabilities in the network and application layer
+Exploiting vulnerabilities in web applications and wireless networks
+
+Each student will be provided with their own, private lab environment for the duration of the course. 
+The lab provides a controlled environment for hands-on practical exercises throughout the course to re-enforce they concepts that
+have been taught.
+-------------------------------------------------------------------------------------
+ACHIEVING SECURITY AWARENESS THROUGH SOCIAL ENGINEERING ATTACKS
+Presenter: jayson e. street & april c. wright
+
+ACTIVE DECEPTION 欺騙，欺詐FOR RED AND BLUE TEAMS
+Presenter: pentester academy
+
+[重要]ACTIVE DIRECTORY ATTACKS FOR RED AND BLUE TEAMS
+Presenter: pentester academy
+
+ACHIEVING SECURITY AWARENESS THROUGH SOCIAL ENGINEERING ATTACKS
+Presenter: jayson e. street & april c. wright
+
+ADAPTIVE優化 PENETRATION TESTING
+Presenter: coalfire labs
+
+[雲端安全]ADVANCED CLOUD SECURITY AND APPLIED DEVSECOPS
+Presenter: securosis
+
+[硬體安全]ADVANCED HARDWARE HACKING: HANDS-ON POWER ANALYSIS & GLITCHING WITH THE CHIPWHISPERER
+Presenter: newae technology inc.
+
+[系統安全]HACKING AND SECURING WINDOWS INFRASTRUCTURE
+
+[系統安全讚]ADVANCED INFRASTRUCTURE HACKING - 2018 EDITION: 2 DAY
+Presenter: notsosecure
+
+ADVANCED OPEN SOURCE INTELLIGENCE FOR SOCIAL ENGINEERS
+Presenter: social-engineer, llc
+
+ADVANCED WHITEBOARD HACKING - AKA HANDS-ON THREAT MODELING
+Presenter: toreon
+-----------------------------------------------------------------------------------------------
+[讚]AIKIDO ON THE COMMAND LINE - LINUX LOCKDOWN AND PROACTIVE SECURITY
+Presenter: jay beale, inguardians
+Students will leave this course able to:
+Configure Linux machines for much stronger attack resiliency.
+Configure Web, Mail, FTP and other server applications to break exploits against known and unknown vulnerabilities.
+Use SELinux and AppArmor to restrict and harden server programs.
+Deploy ModSecurity to add web application firewall functionality to Apache and Nginx.
+Create host-based firewalls, with optional GPG-backed port knocking.
+Detect and respond to attacks with OSSEC.
+Use encryption to create safer processes and administration.
+Use Docker, Kubernetes and runc to create Linux containers to jail server programs
+-----------------------------------------------------------------------------------------------
+[行動安全讚]ANDROID APPLICATION HACKING - PENTESTING, REVERSING AND RESEARCHING MOBILE APPS
+Presenter: erez metula, appsec labs
+Among the topics you will learn about:
+•	Android execution model – The android OS, differences from other Linux based machines, rooting, using an emulator VS a real device, the android runtime, Dalvik VS. ART, android security mechanisms, permissions
+•	Static analysis - The APK file package, APK extraction, classes.dex, using assembler/disassembler, decompilation, handling obfuscated code
+•	Patching – Code patching, changing the app behavior, repackaging, resigning
+•	Dynamic analysis - Monitoring process activity, analyzing logs using logcat, Memory dumps and analysis, smali/native debugging , Setting breakpoints, Dynamic manipulation using exposed and Frida
+•	Traffic manipulation - Common vulnerabilities related to traffic, using Proxies and sniffers to while manipulation traffic, Bypassing certificate validations and cert pinning
+•	Data storage – Internal vs. external storage, while to find sensitive files, analyzing and patching android SQLIte DB
+•	Component security – Component types, Component permissions and visibility , spoofing calls to components, Unprotected content providers
+•	IPC – Talking with other apps on the same device, intents, direct component invocation by unauthorized apps, accessing restricted screens
+
+OFFENSIVE MOBILE EXPLOITATION & REVERSING
+Presenter: darkmatter
+-----------------------------------------------------------------------------------------------
+[應用程式安全讚]APPLICATION SECURITY: FOR HACKERS AND DEVELOPERS
+Presenter: vda labs
+ four technical skills 
+ Source code auditing, fuzzing, reverse engineering, and exploitation
+ 
+stack overflows, function pointer overwrites, heap overflows, off-by-ones, FSEs, 
+return to libc, integer errors, uninitialized variable attacks, heap spraying, and ROP.
+-----------------------------------------------------------------------------------------------
+APPLIED DATA SCIENCE AND MACHINE LEARNING FOR CYBER SECURITY
+Presenter: gtk cyber
+Writing scripts to efficiently read and manipulate CSV, XML, and JSON files
+Quickly and efficiently parsing executables, log files, pcap and extracting * artifacts from them
+Making API calls to merge datasets
+Use the Pandas library to quickly manipulate tabular data
+Effectively visualizing data using Python
+Preprocessing raw security data for machine learning and feature engineering
+Building, applying and evaluating machine learning algorithms to identify potential threats
+Automating the process of tuning and optimizing machine learning models
+Hunting anomalous indicators of compromise and reducing false positives
+Use supervised learning algorithms such as Random Forests, Naive Bayes, K-Nearest Neighbors (K-NN) and Support Vector Machines (SVM) to classify malicious URLs and identify SQL Injection
+Apply unsupervised learning algorithms such as K-Means Clustering to detect anomalous behavior
+-----------------------------------------------------------------------------------------------
+APPLIED HARDWARE ATTACKS: EMBEDDED AND IOT SYSTEMS
+Presenter: joe fitzpatrick, securinghardware.com
+
+APPLIED MACHINE LEARNING FOR IDENTITY AND ACCESS MANAGEMENT
+Presenter: aaron turner & raffael marty
+
+ATTACKS OVER 4G WITH PROJECT MAYHEM
+Presenter: antimatter security
+
+AUTOMATED DEFENSE USING SERVERLESS FOR AWS, AZURE AND GCP
+Presenter: appsecco
+
+PYTHON HACKER BOOTCAMP: ZERO TO HERO
+Presenter: snowfensive, llc
+
+SECDEVOPS: INJECTING SECURITY INTO DEVOPS
+Presenter: sensepost
+
+--------------------------------------
+[基礎課程]BASIC INFRASTRUCTURE HACKING
+Presenter: notsosecure
+Day 1:
+TCP/IP basics
+The Art of Port scanning
+Target Enumeration
+Brute-forcing
+Metasploit Basics
+Hacking recent Unix Vulnerabilities
+Hacking Databases
+Hacking Application Servers
+
+Day 2
+Hacking third party applications (Wordpress, Joomla, Drupal)
+Windows Enumeration
+Hacking recent Windows Vulnerabilities.
+Hacking Third party software (browser, pdf, java)
+Post Exploitation: Dumping Secrets.
+Hacking Windows Domains.
+--------------------------------------
+[基礎課程]BASIC WEB HACKING
+Presenter: notsosecure
+Day 1: 
+Understanding the HTTP protocol
+Identifying the attack surface
+Information gathering
+Authentication Flaws
+Online/Offline brute-force attacks
+Cryptographic Flaws
+Issues with SSL/TLS
+Authorization Bypass
+
+Day 2: OWASP TOP 10 
+Insecure Direct Object Reference
+Cross Site Scripting (XSS)
+Reflective and Persistent XSS
+Cross Site Request Forgery (CSRF)
+SQL Injection (SQLi)
+Tools and Techniques for exploiting SQLi
+XML External Entity (XXE) Attacks
+Insecure File Uploads
+--------------------------------------
+
+TACTICAL EXPLOITATION: ATTACKING WINDOWS
+Presenter: attack research, llc
+
+BLACK OPS HACKING - MASTER LEVEL
+Presenter: sensepost
+
+CAR HACKING HANDS-ON
+Presenter: robert leale
+
+ADVANCED HARDWARE HACKING: HANDS-ON POWER ANALYSIS & GLITCHING WITH THE CHIPWHISPERER
+Presenter: newae technology inc.
+--------------------------------------------------------------------
+CLOUD SECURITY HANDS-ON (CCSK PLUS V.4)
+Presenter: securosis
+
+AWS & AZURE EXPLOITATION: MAKING THE CLOUD RAIN SHELLS!
+Presenter: stage 2 security
+
+ADVANCED CLOUD SECURITY AND APPLIED DEVSECOPS
+Presenter: securosis
+--------------------------------------------------------------------
+DATA BREACHES: DETECTION, INVESTIGATION AND RESPONSE
+Presenter: sherri davidoff, lmg security
+
+FUZZING FOR VULNERABILITIES
+Presenter: huntress labs
+
+IC REVERSE ENGINEERING & ATTACKS 101
+Presenter: olivier thomas - texplained
+
+INFORMATION OPERATIONS: INFLUENCE, EXPLOIT, AND COUNTER
+Presenter: gregory conti & david raymond
+
+------------------------------------------------------------------
+INTRODUCTION TO SOFTWARE DEFINED RADIO - STARTING FROM SCRATCH
+Presenter: paul clark
+
+
+SOFTWARE DEFINED RADIO
+Presenter: michael ossmann, great scott gadgets
+
+
+INTERMEDIATE SOFTWARE DEFINED RADIO - DIGITAL COMMUNICATION
+Presenter: paul clark
+---------------------------------------------------------------------
+JOE GRAND'S HANDS-ON HARDWARE HACKING TRAINING
+Presenter: joe grand, grand idea studio, inc.
+
+APPLIED HARDWARE ATTACKS: HARDWARE PENTESTING
+Presenter: joe fitzpatrick, securinghardware.com
+
+HARDWARE ATTACKS, THREATS, RISKS, AND MITIGATIONS
+Presenter: hardwaresecurity.training
+
+IC REVERSE ENGINEERING & ATTACKS 101
+Presenter: olivier thomas - texplained
+---------------------------------------------------------------------
+
+[讚]A PRACTICAL APPROACH TO MALWARE ANALYSIS AND MEMORY FORENSICS - 2018 EDITION
+
+MACOS MALWARE ANALYSIS FOR REVERSE ENGINEERS
+Presenter: flare team of mandiant, a fireeye company
+
+
+MALWARE ANALYSIS CRASH COURSE
+Presenter: flare team of mandiant, a fireeye company
+Hands-on malware dissection
+How to create a safe malware analysis environment
+How to quickly extract network and host-based indicators
+How to perform dynamic analysis using system monitoring utilities to capture the file system, registry, and network activity generated by malware
+How to debug malware and modify control flow and logic of software
+To analyze assembly code after a crash course in the Intel x86 assembly language
+Windows internals and APIs
+How to use key analysis tools like IDA Pro and OllyDbg
+What to look for when analyzing a piece of malware
+The art of malware analysis - not just running tools
+
+OSINT TECHNIQUES AND METHODOLOGY
+Presenter: delitor, inc.
+
+OFFENSIVE MOBILE EXPLOITATION & REVERSING
+Presenter: darkmatter
+
+THE MOBILE APPLICATION HACKER'S HANDBOOK: LIVE EDITION
+Presenter: mdsec
+
+OPEN SOURCE INTELLIGENCE WITH MALTEGO
+Presenter: paterva
+
+
+PENTESTING ENTERPRISE INFRASTRUCTURE - JOURNEYMAN LEVEL
+Presenter: sensepost
+
+-----------------------------------------------------------------------------------------
+PRACTICAL IOT HACKING: BASIC EDITION
+Presenter: payatu
+
+Attendees will be provided with:
+1. Drona - an attack VM that has most of the required tools and features for IoT security analysis.
+2. ExplIoT - Open Source IoT exploitation framework created by us specifically for IoT penetration testing.
+3. DIVA–IoT - a vulnerable IoT sensor made in-house for hands-on exercises.
+4. Practical IoT Hacking Lab Manual - with detailed and step by step information on each lab.
+
+Course Layout
+Software
+IoT Architecture
+IoT Attack Surface
+IoT Security Testing process
+ExplIot Framework architecture
+Writing your own exploits/test cases using ExplIoT
+IoT Protocol attacks - MQTT, CoAP...
+
+Hardware
+Radio IoT Protocol attacks - ZigBee, BLE
+Conventional attacks on Sensors
+Firmware analysis and Reverse engineering
+External Storage Attacks
+Hardware components and Reconnaissance
+Identifying Debug ports
+Interfacing with debug ports
+Analyzing and extracting data from memory chips
+Sniffing bus communication
+Hardware protocol understanding - UART, I2C, SPI, JTAG...
+-----------------------------------------------------------------------------------------
+THE ARM IOT EXPLOIT LABORATORY: INTRO
+Presenter: saumil shah
+
+LEARNING OBJECTIVES:
+-------------------
+* Introduction to the ARM CPU architecture
+* Exploring ARM assembly language
+* Understanding how functions work in ARM
+* Debugging on ARM systems
+* Exploiting Stack Overflows on ARM
+* Writing ARM Shellcode from the ground up
+* Exercises: Putting together practical end-to-end ARM/Linux exploits
+* The Lab environment is a mixture of physical ARM hardware and ARM virtual machines.
+
+DAILY SCHEDULE:
+---------------
+DAY 1
+* Introduction to the ARM CPU architecture
+* Understanding ARM assembly language
+* EXERCISE - Examples in ARM Assembly Language
+* Debugging on ARM systems
+* Understanding how functions work in ARM
+* Exploiting Stack Overflows on ARM
+* EXERCISE - ARM Stack Overflows
+
+DAY 2
+* Writing ARM Shellcode from the ground up
+* Simple ARM Shellcode
+* Complex ARM Shellcode
+* Shellcode optimization, avoiding NULL bytes and bad characters
+* EXERCISE - Embedded Web Server exploit
+-----------------------------------------------------------------------------------------
+THE ADVANCED ARM IOT EXPLOIT LABORATORY
+
+LEARNING OBJECTIVES:
+-------------------
+* How functions work in ARM - a quick recap
+* Introduction to Return Oriented Programming
+* Bypassing exploit mitigation using ROP
+* Practical ARM ROP
+* Bypassing ASLR
+* Exercise: Applying ARM ROP chains to an existing non-ROP exploit
+* An Introduction to firmware extracting
+* Emulating and debugging a SoHo router's firmware in a virtual environment
+* "Firmware-To-Shell" - exploiting an actual SoHo router
+* The Lab environment is a mixture of physical ARM hardware and ARM virtual machines.
+
+DAILY SCHEDULE:
+---------------
+DAY 1
+* How functions work in ARM - a quick recap
+* Introduction to Exploit Mitigation Techniques (XN/DEP and ASLR)
+* Introduction to ARM Return Oriented Programming
+* Bypassing exploit mitigation on ARM using ROP
+* ARM ROP Tools
+* Practical ROP Chains on ARM
+* EXERCISE - Exploit featuring ARM ROP Chains
+* Bypassing ASLR
+* EXERCISE - End to end exploit with ASLR and XN/DEP bypass
+
+DAY 2
+* An Introduction to firmware extracting
+* Emulating and debugging a SoHo router's firmware in a virtual environment
+* "Firmware-To-Shell" - exploiting an actual SoHo router
+* EXERCISE - Working SoHo Router exploit in an emulated environment
+* EXERCISE - Attacking a DLINK ARM Router - from firmware to shell
+* BONUS EXERCISE - Attacking a TRIVISION ARM IP Camera - from firmware to shell
+-----------------------------------------------------------------------------------------
+THE IDA PRO BASIC COURSE
+Presenter: chris eagle
+
+THE SHELLCODE LAB
+Presenter: threat intelligence pty ltd
+
+---------------------------------------------------------
+THE WEB APPLICATION HACKER'S HANDBOOK, LIVE EDITION
+Presenter: marcus pinto, mdsec
+
+WEB HACKING - BLACK BELT EDITION
+Presenter: notsosecure
+
+---------------------------------------------------------
+WINDOWS ENTERPRISE INCIDENT RESPONSE
+Presenter: mandiant, a fireeye company
+
+WINDOWS KERNEL PRIMER
+Presenter: john degruyter, hungry hackers
+
+APPLIED MACHINE LEARNING FOR IDENTITY AND ACCESS MANAGEMENT
+Presenter: aaron turner & raffael marty
+
+A GUIDED TOUR OF EMBEDDED SOFTWARE HACKS
+Presenter: craig young, tripwire vert
+
+PRACTICAL VULNERABILITY DISCOVERY WITH FUZZING
+Presenter: brian gorenc & abdul-aziz hariri
+
+FUZZING FOR VULNERABILITIES
+Presenter: huntress labs
+
+PYTHON HACKER BOOTCAMP: ZERO TO HERO
+Presenter: snowfensive, llc
+
+SECDEVOPS: INJECTING SECURITY INTO DEVOPS
+Presenter: sensepost
+
+CRYPTOGRAPHY USES AND MISUSES PART II - ASYMMETRIC CRYPTOGRAPHY AND KEY EXCHANGE
+Presenter: yehuda lindell
+
+DARK SIDE OPS - CUSTOM PENETRATION TESTING
+Presenter: silent break security
+
+DARK SIDE OPS 2 - ADVERSARY SIMULATION
+Presenter: silent break security
+
+DATA BREACHES: DETECTION, INVESTIGATION AND RESPONSE
+Presenter: sherri davidoff, lmg security
+
+ERP SECURITY: ASSESS, EXPLOIT AND DEFEND SAP PLATFORMS
+Presenter: onapsis inc
+
+SECURE MOBILE APPLICATION DEVELOPMENT
+Presenter: sense of security pty ltd
+
+ABILITIES INC - METASPLOIT MASTERY
+Presenter: egypt & mubix
+
+ABSOLUTE SCADA: RED TEAM EDITION
+Presenter: tom parker & jonathan pollet
+
+ACHIEVING SECURITY AWARENESS THROUGH SOCIAL ENGINEERING ATTACKS
+Presenter: jayson e. street & april c. wright
+
+ACTIVE DECEPTION FOR RED AND BLUE TEAMS
+Presenter: pentester academy
+
+
+OSINT TECHNIQUES AND METHODOLOGY
+Presenter: delitor, inc.
+
+
+ACTIVE DIRECTORY ATTACKS FOR RED AND BLUE TEAMS
+Presenter: pentester academy
+
+MILITARY STRATEGY AND TACTICS FOR CYBER SECURITY
+Presenter: gregory conti & david raymond
+
+ADVANCED SECURITY: FOR HACKERS AND DEVELOPERS
+Presenter: vda labs
+
+[讚]IN-DEPTH CODE INJECTION FOR ATTACKERS, DEFENDERS, AND DEVELOPERS
 
 PENETRATION TESTING WITH KALI LINUX
 
-THE SECURITY AUTOMATION LAB
+[讚]THE SECURITY AUTOMATION LAB
 
-魔鬼敵手大戰術與策略及手法ADVERSARY TACTICS: POWERSHELL
+[讚]魔鬼敵手大戰術與策略及手法ADVERSARY TACTICS: POWERSHELL
 
-ADVANCED WINDOWS EXPLOITATION
+[讚]ADVERSARY TACTICS: DETECTION
+Presenter: specterops
 
-crash course速成課程
+[讚]ADVANCED WINDOWS EXPLOITATION
+
+
