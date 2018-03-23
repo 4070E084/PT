@@ -1,0 +1,143 @@
+# IN-DEPTH CODE INJECTION FOR ATTACKERS, DEFENDERS, AND DEVELOPERS
+
+https://www.blackhat.com/us-18/training/schedule/#in-depth-code-injection-for-attackers-defenders-and-developers-9788
+
+Ten Process Injection Techniques: A Technical Survey Of Common And Trending Process Injection Techniques
+https://www.endgame.com/blog/technical-blog/ten-process-injection-techniques-technical-survey-common-and-trending-process
+
+http://blog.deniable.org/blog/2017/07/16/inject-all-the-things/
+
+Code injection is a technique that is increasingly used by attackers in today's breaches. 
+Enterprise organizations are increasingly deploying application whitelisting, 
+so the old techniques of dropping an executable to disk and running it are becoming less effective every day. 
+Contrary to many media reports, as an industry we are getting better at defense. 
+While traditional code injection is nothing new, attackers are developing new techniques regularly.
+
+Unfortunately, most defenders have no idea how code injection really works. 
+It's challenging to investigate attackers using code injection if you don't understand what attackers are doing. 
+Most defenders know that code injection exist but hope that endpoint protection products (dare I say antivirus) will take care of it.
+
+Incident responders and forensic investigators are not doing much better. 
+Many reports that blame "code injection" do so by elimination.
+"We've checked for all the stuff we know and didn't see any of that - it must be code injection." 
+In this unfortunate model, code injection has become the boogey man. 
+Investigators who understand the mechanics of code injection truly understand the realm of the possible 
+and are better prepared to investigate today's breaches.
+
+But what about penetration testers and red team members who use code injection on a regular basis? 
+Sadly most of them don't really understand it either. Ever used the "migrate" feature of metasploit? 
+You've used code injection. Do you know how it works or why? You should – it will make you better at your job. 
+Professional pilots don't just train for flying in calm weather. 
+They train for flying in choppy weather, when an engine fails, and everything goes to pot.
+
+Whether you're in infosec offense or defense, truly mastering code injection will make you better at what you do. 
+In this course, you'll learn all the programming interfaces (APIs) that make code injection happen. 
+For each different code injection technique, you'll receive source code that uses the technique. 
+We'll examine how the technique works, how stealthy it is, what endpoint protections stop it, 
+and what forensic artifacts it leaves behind.
+
+In this course, we'll start by covering the basics of code injection, 
+using the venerable "CreateRemoteThread" and move into advanced topics like Atom Bombing and Gargoyle 
+that evade many traditional forensics techniques. 
+On the way, we'll cover how DLL sideloading is used to inject code into processes a
+nd what this looks like forensically. 
+We'll cover how hooking can be used to bypass antivirus and leave little forensic evidence on disk. 
+You'll also learn how memory-only (so-called fileless malware) also operates.
+
+Although this is not a programming course, we will get our hands dirty with some code. 
+Not a programmer? Don't worry, completed projects are provided so you don't have to write a single line of code. 
+We provide pre-built binaries as well, but having source available is critical for experimentation with the techniques.
+
+We'll also spend some time in the debugger and in IDA Pro. Why? 
+Defenders don't have source code and usage for the malware they find in their environments. 
+They must analyze the programs left behind by the attacker. 
+Reverse engineering is not the primary focus of the course, but we will have an assembly, debugger, 
+and disassembly primer for those not familiar with those concepts.
+
+Day 1: Introduction to the Windows API, code injection, and detection/forensics techniques
+Introduction to our toolset:
+Visual Studio, x32/x64dbg, IDA Pro (freeware edition), and Volatility
+Lab: Tool familiarity/installation
+Introduction to virtual memory, cross process injection, and hooking
+Lab: Investigating cross process injection with Process Hacker
+Building code injection tools with CreateRemoteThread – the OG of code injection
+Lab: Building and using CreateRemoteThread code injection tools
+Memory forensics topics in code injection
+Lab: Investigating code injection using memory forensics
+Investigating code injection tools that use CreateRemoteThread
+Lab: Investigating CreateRemoteThread code injection tool artifacts
+DLL Sideloading and path abuse
+Constructing DLL sideloading attacks and how to detect/investigate them
+
+Day 2 – Reflective injection and process hollowing
+Reflective code injection – code injection that never touches disk
+Building reflective injection code and investigating how it works
+Lab: Building and deploying reflective injection code
+Detecting reflective injection code and investigating attacks that use it
+Lab: Detecting and investigating reflective injection attacks
+Process hollowing – what is it, why does it exist, and how can we use it
+Lab: Building and deploying process hollowing code injection tools
+Detecting process hollowing code and investigating attacks that use it
+Lab: Detecting and investigating process hollowing code injection attacks
+
+Day 3: Bam – Crank it up another notch!
+Hollowing processes that are already running to bypass AV
+Lab: Building and deploying running process hollowing tools
+Putting it together like a nation state – chaining code injection techniques like Stuxnet
+Lab: Build your own Stuxnet
+Detecting and investigating chained code injection techniques
+Lab: Investigate your own Stuxnet
+Hooking to inject code
+Lab: Building and detecting code injection using hooking
+
+Day 4: The good, the bad, and the WTF was that?!
+Understanding how code injection attacks can use scripting languages like PowerShell
+Lab: Deploying and investigating PowerShell code injection
+Data Execution Prevention (DEP) and Return Oriented Programming (ROP) fundamentals
+Atom Bombing (no, not the Manhattan Project) – learning about Desktops, Atoms, and other Windows objects
+Lab: Building and deploying Atom Bombing code
+Investigating artifacts left by Atom Bombing attacks
+Lab: Detecting and investigating Atom Bombing attacks
+Evading memory forensics detection using Gargoyle (another ROP based technique)
+Building Gargoyle code to avoid detection by traditional antivirus
+
+
+DLL Injection
+https://pentestlab.blog/2017/04/04/dll-injection/
+
+DLL injection is a technique which allows an attacker to run arbitrary code in the context of the address space of another process. If this process is running with excessive privileges then it could be abused by an attacker in order to execute malicious code in the form of a DLL file in order to elevate privileges.
+
+Specifically this technique follows the steps below:
+
+A DLL needs to be dropped into the disk
+The “CreateRemoteThread” calls the “LoadLibrary”
+The reflective loader function will try to find the Process Environment Block (PEB) of the target process using the appropriate CPU register and from that will try to find the address in memory of kernel32dll and any other required libraries.
+Discovery of the memory addresses of required API functions such as LoadLibraryA, GetProcAddress, and VirtualAlloc.
+The functions above will be used to properly load the DLL into memory and call its entry point DllMain which will execute the DLL.
+This article will describe the tools and the process of performing DLL injection with PowerSploit, Metasploit and a custom tool.
+
+[1]Manual Method---Metasploit msfvenom
+DLL’s can be created from scratch or through Metasploit msfvenom which can generate DLL files that will contain specific payloads. 
+It should be noted that a 64-bit payload should be used if the process that the DLL will be injected is 64-bit.
+
+[2]Remote DLL Injector from SecurityXploded team 
+which is using the CreateRemoteThread technique and 
+it has the ability to inject DLL into ASLR enabled processes. 
+
+https://github.com/stephenfewer/ReflectiveDLLInjection
+
+[3]Metasploit
+Metasploit framework has a specific module for performing DLL injection. 
+It only needs to be linked into a meterpreter session and to specify the PID of the process and the path of the DLL.
+
+[4]PowerSploit
+Privilege escalation via DLL injection it is also possible with PowerSploit as well. 
+The msfvenom can be used to generate the malicious DLL and then through the task manager the PID of the target process can be obtained. 
+If the process is running as SYSTEM then the injected DLL will run with the same privileges as well and the elevation will be achieved.
+
+https://clymb3r.wordpress.com/2013/04/06/reflective-dll-injection-with-powershell/
+http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html
+https://disman.tl/2015/01/30/an-improved-reflective-dll-injection-technique.html
+https://www.nettitude.co.uk/dll-injection-part-two/
+
+
