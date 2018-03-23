@@ -1,4 +1,12 @@
-
+The need for reverse engineering binary software components arises in more and more contexts every day. 
+Common cases include analysis of malicious software such as viruses, worms, trojans and rootkits, 
+analyzing binary drivers in order to develop open source drivers for alternate platforms, 
+analyzing closed source software for security flaws, and source code recovery in legacy systems. 
+The first step in such an analysis is generally the acquisition of a high quality disassembly of the binary component. 
+Ida Pro is touted as the premier disassembler available today, capable of disassembling machine languages for 
+a large number of microprocessors and micro controllers. This course will cover advanced features of Ida that may be used to 
+work through challenging reverse engineering problems. 
+This course is taught using primarily x86 and ARM assembly language.
 
 
 THE IDA PRO ADVANCED COURSE
