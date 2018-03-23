@@ -3,7 +3,10 @@ ABILITIES INC - METASPLOIT MASTERY
 https://www.blackhat.com/us-18/training/schedule/#abilities-inc---metasploit-mastery-9807
 
 OVERVIEW
-Egypt and Mubix have combined their knowledge of the innards of the Metasploit Framework and Adversarial Red Teaming to introduce one of the most intense classes on attacking networks. Coverage on everything from hacking up your own plugins to owning a whole networking without drawing a single drop of buffer overflow blood. This surgical strike upon your frontal lobe will leave you whistling ruby and spurting root shellz from your veins. 
+Egypt and Mubix have combined their knowledge of the innards of the Metasploit Framework and Adversarial Red Teaming 
+to introduce one of the most intense classes on attacking networks. Coverage on everything from hacking up your own 
+plugins to owning a whole networking without drawing a single drop of buffer overflow blood. This surgical strike upon 
+your frontal lobe will leave you whistling ruby and spurting root shellz from your veins. 
 
 Course Syllabus: 
 
@@ -21,3 +24,465 @@ Post exploitation
 Post Modules
 Question and Answer
 CTF!
+
+
+===============================================================
+Metasploit滲透測試指南(修訂版)
+Metasploit:the Penetration Tester's Guide
+
+第1 章 滲透測試技術基礎 
+1.1 PTES 中的滲透測試階段
+1.1.1 前期交互階段
+1.1.2 情報搜集階段
+1.1.3 威脅建模階段 
+1.1.4 漏洞分析階段
+1.1.5 滲透攻擊階段
+1.1.6 後滲透攻擊階段
+1.1.7 報告階段 
+1.2 滲透測試類型
+1.2.1 白盒測試
+1.2.2 黑盒測試
+1.2.3 灰盒測試 
+1.3 漏洞掃描器
+
+第2 章 Metasploit 基礎 
+2.1 專業術語
+2.1.1 滲透攻擊（Exploit）
+2.1.2 攻擊載荷（Payload）
+2.1.3 shellcode
+2.1.4 模組（Module）
+2.1.5 監聽器（Listener）
+2.2 Metasploit 使用者介面
+2.2.1 MSF 終端
+2.2.2 MSF 命令列
+2.2.3 Armitage
+2.3 Metasploit 功能程式
+2.3.1 MSF 攻擊載荷生成器
+2.3.2 MSF 編碼器
+2.3.3 Nasm shel
+2.4 Metasploit Express 和Metasploit Pro
+
+第3 章 情報搜集
+3.1 被動資訊搜集
+3.1.1 whois 查詢
+3.1.2 Netcraft
+3.1.3 nslookup
+3.1.4 Google Hacking 
+3.2 主動資訊搜集
+3.2.1 使用nmap 進行埠掃描
+3.2.2 在Metasploit 中使用資料庫
+3.2.3 使用Metasploit 進行埠掃描
+3.3 針對性掃描
+3.3.1 伺服器訊息區協定掃描
+3.3.2 搜尋配置不當的Microsoft SQL Server
+3.3.3 SSH 伺服器掃描
+3.3.4 FTP 掃描
+3.3.5 簡單網管協定掃描 
+3.4 編寫自己的掃描器
+
+
+第4 章 漏洞掃描 
+4.1 基本的漏洞掃描
+4.2 使用Nexpose 進行掃描 
+4.2.1 配置
+4.2.2 將掃描報告導入到Metasploit 中 
+4.2.3 在MSF 控制台中運行Nexpose
+4.3 使用Nessus 進行掃描
+4.3.1 配置Nessus
+4.3.2 創建Nessus 掃描策略
+4.3.3 執行Nessus 掃描
+4.3.4 Nessus 報告
+4.3.5 將掃描結果導入Metasploit 框架中
+4.3.6 在Metasploit 內部使用Nessus 進行掃描
+4.4 專用漏洞掃描器
+4.4.1 驗證SMB 登錄
+4.4.2 掃描開放的VNC 空口令
+4.4.3 掃描開放的X11 伺服器 
+4.5 利用掃描結果進行自動化攻擊 
+
+第5 章 滲透攻擊之旅
+5.1 滲透攻擊基礎
+5.1.1 msf＞ show exploits
+5.1.2 msf＞ show auxiliary
+5.1.3 msf＞ show options
+5.1.4 msf＞ show payloads 
+5.1.5 msf＞ show targets
+5.1.6 info
+5.1.7 set 和unset
+5.1.8 setg 和unsetg 
+5.1.9 save
+5.2 你的第一次滲透攻擊
+5.3 攻擊Metasploitable 主機 
+5.4 全埠攻擊載荷：暴力猜解目標開放的埠
+
+第6 章 Meterpreter
+6.1 攻陷Windows XP 虛擬機器
+6.1.1 使用nmap 掃描埠
+6.1.2 攻擊MS SQL
+6.1.3 暴力破解MS SQL 服務
+6.1.4 xp_cmdshell
+6.1.5 Meterpreter 基本命令
+6.1.6 獲取鍵盤記錄 
+6.2 挖掘用戶名和密碼
+6.2.1 提取密碼雜湊值
+6.2.2 使用Meterpreter 命令獲取密碼雜湊值 
+6.3 傳遞雜湊值
+6.4 許可權提升
+6.5 權杖假冒
+6.6 使用PS
+6.7 通過跳板攻擊其他機器 
+6.7.1 使用Meterpreter 進行跳板攻擊 
+6.7.2 使用Metasploit Pro 的VPN 跳板
+6.8 使用Meterpreter 腳本
+6.8.1 遷移進程
+6.8.2 關閉殺毒軟體
+6.8.3 獲取系統密碼雜湊值
+6.8.4 查看目的機上的所有流量
+6.8.5 攫取系統資訊
+6.8.6 控制持久化 
+6.9 向後滲透攻擊模組轉變
+6.10 將命令列shell 升級為Meterpreter
+6.11 通過附加的Railgun 元件操作Windows API 
+
+第7 章 免殺技術 
+7.1 使用MSF 攻擊載荷生成器創建可獨立運行的二進位檔案
+7.2 躲避殺毒軟體的檢測
+7.2.1 使用MSF 編碼器
+7.2.2 多重編碼
+7.3 自訂可執行檔範本
+7.4 隱秘地啟動一個攻擊載荷 
+7.5 加殼軟體 
+7.6 使用Metasploit Pro 的動態載荷實現免殺 
+7.7 關於免殺處理的最後忠告
+
+第8 章 用戶端滲透攻擊
+8.1 基於流覽器的滲透攻擊
+8.1.1 基於流覽器的滲透攻擊原理
+8.1.2 關於空指令
+8.2 使用ollydbg 調試器揭秘空指令機器碼
+8.3 對IE 流覽器的極光漏洞進行滲透利用 
+8.4 檔案格式漏洞滲透攻擊 
+8.5 發送攻擊負載
+
+第9 章 Metasploit 輔助模組 
+9.1 使用輔助模組 
+9.2 輔助模組剖析
+
+第10 章 社會工程學工具包 
+10.1 配置SET 工具包
+10.2 針對性釣魚攻擊向量
+10.3 Web 攻擊向量
+10.3.1 Java Applet
+10.3.2 用戶端Web 攻擊
+10.3.3 用戶名和密碼獲取
+10.3.4 標籤頁劫持攻擊（Tabnabbing）
+10.3.5 中間人攻擊
+10.3.6 網頁劫持
+10.3.7 綜合多重攻擊方法
+10.4 傳染性媒體生成器
+10.5 USB HID 攻擊向量
+10.6 SET 的其他特性 
+
+
+第11 章 Fast-Track 
+11.1 Microsoft SQL 注入
+11.1.1 SQL 注入——查詢語句攻擊
+11.1.2 SQL 注入——POST 參數攻擊
+11.1.3 手工注入
+11.1.4 MS SQL 破解
+11.1.5 通過SQL 自動獲得控制（SQL Pwnage）
+11.2 二進位到十六進位轉換器
+11.3 大規模用戶端攻擊
+11.4 對自動化滲透的一點看法
+
+第12 章 Karmetasploit 無線攻擊套件
+12.1 配置
+12.2 開始攻擊
+12.3 獲取憑證
+12.4 得到shell
+
+
+第13 章 編寫你自己的模組
+13.1 在MS SQL 上進行命令執行
+13.2 探索一個已存在的Metasploit 模組
+13.3 編寫一個新的模組 
+13.3.1 PowerShell
+13.3.2 運行shell 滲透攻擊
+13.3.3 編寫Powershell_upload_exec 函數
+13.3.4 從十六進位轉換回二進位程式
+13.3.5 計數器
+13.3.6 運行滲透攻擊模組
+13.4 小結——代碼重用的能量
+
+第14 章 創建你自己的滲透攻擊模組 
+14.1 Fuzz 測試的藝術
+14.2 控制結構化異常處理鏈
+14.3 繞過SEH 限制
+14.4 獲取返回地址
+14.5 壞字元和遠端代碼執行
+14.6 小結
+第15 章 將滲透代碼移植到Metasploit
+15.1 組合語言基礎
+15.1.1 EIP 和ESP 寄存器 
+15.1.2 JMP 指令集
+15.1.3 空指令和空指令滑行區 
+15.2 移植一個緩衝區溢位攻擊代碼 
+15.2.1 裁剪一個已有的滲透攻擊代碼
+15.2.2 構造滲透攻擊過程
+15.2.3 測試我們的基礎滲透代碼
+15.2.4 實現框架中的特性
+15.2.5 增加隨機化
+15.2.6 消除空指令滑行區
+15.2.7 去除偽造的shellcode
+15.2.8 我們完整的模組代碼
+15.3 SEH 覆蓋滲透代碼
+
+
+第16 章 Meterpreter 腳本程式設計 
+16.1 Meterpreter 腳本程式設計基礎
+16.2 Meterpreter API
+16.2.1 列印輸出
+16.2.2 基本API 調用 
+16.2.3 Meterpreter Mixins
+16.3 編寫Meterpreter 腳本的規則
+16.4 創建自己的Meterpreter 腳本 
+
+
+第17 章 一次模擬的滲透測試過程 
+17.1 前期交互 
+17.2 情報搜集 
+17.3 威脅建模
+17.4 滲透攻擊
+17.5 MSF 終端中的滲透攻擊過程
+17.6 後滲透攻擊
+17.6.1 掃描Metasploitable 靶機
+17.6.2 識別存有漏洞的服務
+17.7 攻擊PostgreSQL 資料庫服務
+17.8 攻擊一個偏門的服務
+17.9 隱藏你的蹤跡 
+
+
+附錄A 配置目的機器 
+附錄B 命令參考列表 .
+
+
+===============================================================
+精通Metasploit滲透測試（第2版）
+作者： （英）NIPUN JASWAL
+出版社：人民郵電出版社
+出版日期：2017/10/01
+
+第1章走近Metasploit滲透測試框架1 
+1.1組織一次滲透測試3 
+1.2前期交互階段3 
+1.3信息收集/偵查階段5 
+1.4了解測試環境7 
+1.4.1威脅建模階段7 
+1.4.2漏洞分析階段8 
+1.4. 3滲透階段和後滲透階段8 
+1.4.4報告階段9 
+1.4.5工作環境的準備9 
+1.5在虛擬環境中安裝Kali Linux 9 
+1.6 Metasploit基礎13 
+1.7使用Metasploit進行滲透測試14 
+1.8使用Metasploit進行滲透測試的優勢15 
+1.8.1源代碼的開放性16 
+1.8.2對大型網絡測試的支持以及便利的命名規則16 
+1.8.3靈活的攻擊載荷模塊生成和切換機制16 
+1.8.4乾淨的通道建立方式16 
+1.8.5圖形化管理界面17 
+1.9對未知網絡的滲透測試17 
+1.9.1假設17 
+1.9.2信息收集17 
+1.10在Metasploit中使用數據庫18 
+1.11威脅建模20 
+1.12 VSFTPD 2.3.4後門的漏洞分析21 
+1.12.1攻擊過程22
+1.12.2漏洞滲透的過程22 
+1.12.3滲透模塊和後滲透模塊23 
+1.13 PHP-CGI查詢字符串參數漏洞的分析29 
+1.14 HFS 2.3上的漏洞分析34 
+1.15滲透訪問控制的持久化37 
+1.16清除滲透痕跡38 
+1.17回顧入侵過程39 
+
+第2章打造定制化的Metasploit滲透測試框架42 
+2.1 Ruby——Metasploit的核心43 
+2.1.1創建你的第一個Ruby程序43 
+2.1.2 Ruby中的變量和數據類型45 
+2.1.3 Ruby中的方法48 
+2.1.4決策運算符49 
+2.1.5 Ruby中的循環50 
+2.1.6正則表達式50 
+2.1.7 Ruby基礎知識小結52 
+2.2開發自定義模塊52 
+2.2.1模塊編寫的概要52 
+2.2.2了解現有模塊57 
+2.2.3分解已有的HTTP服務器掃描模塊58 
+2.2.4編寫一個自定義FTP掃描程序模塊62 
+2.2.5編寫一個自定義的SSH認證暴力破解器65 
+2.2.6編寫一個讓硬盤失效的後滲透模塊69 
+2.2.7編寫一個收集登錄憑證的後滲透模塊73 
+2.3突破Meterpreter腳本77
+2.3.1 Meterpreter腳本的要點78 
+2.3.2以被控制的計算機為跳板78 
+2.3.3設置永久訪問權限81 
+2.3.4 API調用和mixins類82 
+2.3.5製作自定義Meterpreter腳本83 
+2.4與RailGun協同工作84 
+2.4.1交互式Ruby命令行基礎84 
+2.4.2了解RailGun及其腳本編寫85 
+2.4.3控制Windows中的API調用87 
+2.4.4構建複雜的RailGun腳本87 
+
+
+
+第3章滲透模塊的開發過程90 
+3.1滲透的最基礎部分90 
+3.1.1基礎部分90 
+3.1.2計算機架構91 
+3.1.3寄存器92 
+3.2使用Metasploit實現對棧的緩衝區溢出93 
+3.2.1使一個有漏洞的程序崩潰94 
+3.2. 2構建滲透模塊的基礎95 
+3.2.3計算偏移量96 
+3.2.4查找JMP ESP地址98 
+3.2.5填充空間100 
+3.2.6確定壞字符102 
+3.2.7確定空間限制102 
+3.2.8編寫Metasploit的滲透模塊103 
+3.3使用Metasploit實現基於SEH的緩衝區溢出106
+3.3.1構建滲透模塊的基礎108 
+3.3.2計算偏移量109 
+3.3.3查找POP/POP/RET地址110 
+3.3.4編寫Metasploit的SEH滲透模塊112 
+3.4在Metasploit模塊中繞過DEP 115 
+3.4.1使用msfrop查找ROP指令片段117 
+3.4.2使用Mona創建ROP鏈118 
+3.4.3編寫繞過DEP的Metasploit滲透模塊120 
+3.5其他保護機制122 
+
+
+第4章滲透模塊的移植124 
+4.1導入一個基於棧的緩衝區溢出滲透模塊124 
+4.1.1收集關鍵信息127 
+4.1.2構建Metasploit模塊127 
+4.1.3使用Metasploit完成對目標應用程序的滲透129 
+4.1.4在Metasploit的滲透模塊中實現一個檢查（check）方法130 
+4.2將基於Web的RCE導入Metasploit 131 
+4.2.1收集關鍵信息132 
+4.2.2掌握重要的Web函數132 
+4.2.3 GET/POST方法的使用要點133 
+4.2.4將HTTP滲透模塊導入到Metasploit中134 
+4.3將TCP服務端/基於瀏覽器的滲透模塊導入Metasploit 136 
+4.3.1收集關鍵信息138
+4.3.2創建Metasploit模塊138 
+
+
+第5章使用Metasploit對服務進行測試142 
+5.1 SCADA系統的基本原理142 
+5.1.1 ICS的基本原理以及組成部分143 
+5.1.2 ICS-SCADA安全的重要性143 
+5.1 .3 SCADA系統的安全性分析143 
+5.1.4使SCADA變得更加安全147 
+5.2數據庫滲透148 
+5.2.1 SQL Server 148 
+5.2.2使用Nmap對SQL Server進行踩點149 
+5.2.3使用Metasploit的模塊進行掃描150 
+5.2.4暴力破解密碼151 
+5.2.5查找/捕獲服務器的口令152 
+5.2.6瀏覽SQL Server 153 
+5.2.7後滲透/執行系統命令154 
+5.3 VOIP滲透測試156 
+5.3.1 VOIP的基本原理156 
+5.3.2對VOIP服務踩點158 
+5.3.3掃描VOIP服務159 
+5.3.4欺騙性的VOIP電話160 
+5.3.5對VOIP進行滲透162 
+
+第6章虛擬化測試的原因及階段164 
+6.1使用Metasploit集成的服務完成一次滲透測試164
+6.1.1與員工和最終用戶進行交流165 
+6.1.2收集信息166 
+6.1.3使用Metasploit中的OpenVAS插件進行漏洞掃描167 
+6.1.4對威脅區域進行建模171 
+6.1.5獲取目標的控制權限172 
+6.1 .6保持控制權限和掩蓋入侵痕跡178 
+6.1.7使用Faraday管理滲透測試178 
+6.1.8手動創建報告180 
+
+
+第7章客戶端滲透184 
+7.1有趣又有料的瀏覽器滲透攻擊184 
+7.1.1 browser autopwn攻擊185 
+7.1.2對網站的客戶進行滲透188 
+7.1.3與DNS欺騙的結合使用191 
+7.2 Metasploit和Arduino——致命搭檔196 
+7.3基於各種文件格式的滲透攻擊201 
+7.3.1基於PDF文件格式的滲透攻擊201 
+7.3.2基於Word文件格式的滲透攻擊203 
+7.4使用Metasploit實現對Linux客戶端的滲透205 
+7.5使用Metasploit攻擊Android系統206 
+
+ 
+第8章Metasploit的擴展功能211 
+8.1 Metasploit後滲透模塊的基礎知識211 
+8.2基本後滲透命令211
+8.2.1幫助菜單212 
+8.2.2後台命令212 
+8.2.3機器ID和UUID命令213 
+8.2.4通信信道的操作213 
+8.2.5獲取用戶名和進程信息213 
+8.2.6獲取系統信息214 
+8.2.7網絡命令214 
+8.2.8文件操作命令215 
+8.2.9桌面命令217 
+8.2.10截圖和攝像頭列舉218 
+8.3使用Metasploit中的高級後滲透模塊220 
+8.3.1遷移到更安全的進程上220 
+8.3.2獲取系統級管理權限221 
+8.3.3使用hashdump獲取密碼的哈希值221 
+8.3.4使用timestomp修改文件的訪問時間、修改時間和創建時間222 
+8.4其他後滲透模塊223 
+8.4.1使用Metasploit收集無線SSID信息223 
+8.4.2使用Metasploit收集Wi-Fi密碼223 
+8.4.3獲取應用程序列表224 
+8.4.4獲取Skype密碼225 
+8.4.5獲取USB使用歷史信息225 
+8.4.6使用Metasploit查找文件225 
+8.4.7使用clearev命令清除目標系統上的日誌226 
+8.5 Metasploit中的高級擴展功能227
+8.5.1用Metasploit提升權限227 
+8.5.2使用mimikatz查找明文密碼228 
+8.5.3使用Metasploit進行流量嗅探229 
+8.5.4使用Metasploit對host文件進行注入230 
+8.5.5登錄密碼的釣魚窗口231 
+
+
+第9章提高滲透測試的速度233 
+9.1 pushm和popm命令的使用方法233 
+9.2 loadpath命令的使用234 
+9.3使用reload、edit和reload_all命令加快開發過程235 
+9.4資源腳本的使用方法236 
+9.5在Metasploit中使用AutoRunScript 237 
+9.6 Metasploit中的全局變量240 
+9.7自動化社會工程學工具包241 
+
+
+第10章利用Armitage實現Metasploit的可視化管理244 
+10.1 Armitage的基本原理244 
+10.1.1入門知識245 
+10.1.2用戶界面一覽246 
+10.1. 3工作區的管理247 
+10.2網絡掃描以及主機管理248 
+10.2.1漏洞的建模250 
+10.2.2查找匹配模塊250 
+10.3使用Armitage進行滲透251
+10.4使用Armitage進行後滲透攻擊252 
+10.5使用Armitage進行客戶端攻擊253 
+10.6 Armitage腳本編寫257 
+10.6.1 Cortana基礎知識258 
+10.6.2控制Metasploit 260 
+10.6.3使用Cortana實現後滲透攻擊261 
+10.6.4使用Cortana創建自定義菜單262 
+10.6.5界面的使用264 
