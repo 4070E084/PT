@@ -1,0 +1,69 @@
+
+POWERSHELL
+https://www.blackhat.com/us-18/training/schedule/#adversary-tactics-powershell-9699
+
+
+
+Automation is necessary to be efficient and successful in security for both offensive and defensive teams. 
+Furthermore, with the rapid pace of migration to cloud infrastructure, the need to interact with infrastructure through automation 
+is more important than ever. PowerShell is the language and shell that drives automation across the Windows and Azure ecosystem. 
+Sitting on top of the massive .NET class library, there is very little that cannot be done in PowerShell. 
+Today, PowerShell is relied upon by red teams, threat hunters, incident responders, penetration testers, criminals, 
+and nation-state adversaries alike. Before robust detection capabilities were widely deployed, 
+PowerShell was also the tool of choice for attackers to evade detection. Between the modern security features 
+offered and the fact that most AV/EDR solutions have a PowerShell prevention/detection component, 
+it is imperative that both red teamers and blue teamers understand the defensive landscape when building and using tools within the language.
+
+This class is designed to teach students already comfortable with the basics of PowerShell to take full advantage of the unique benefits it offers security professionals. Since the introduction of version 5, the security optics and preventative controls of PowerShell are unparalleled. Students will learn how to configure, audit, monitor, and bypass every preventative and detective control that PowerShell has to offer. Students will walk away with a profound appreciation of PowerShell's capabilities, strong security enforcement and optics, as well as the extent of its unique, post-exploitation attack surface. In addition, they will also learn the methodology attackers use to research and develop security feature bypasses and stealthy tradecraft. Finally, students will become even more comfortable using PowerShell and identifying when it's the right tool for the job and when it's not.
+
+Defenders must know the reality of how attackers subvert security controls, and mature offensive security testers must know the defensive landscape in which they must tread carefully. This class will serve as a deep dive into PowerShell security capabilities. Every topic presented in class will follow the theme of "for every action, there is an equal and opposite reaction" whereby mitigations, detections, and bypasses will be discussed for nearly every topic covered.
+
+By then end of the course, students will feel confident finding their own previously unpublished security feature bypasses and techniques and then subsequently build opposing detections and mitigations.
+
+The following topics will be covered in this course:
+
+Day 1:
+Motivations/Goals
+PowerShell Basics Refresher
+PowerShell Remoting
+PowerShell Without PowerShell
+3rd party, alternate PowerShell hosts
+Supported Microsoft PowerShell hosts
+Unintended Microsoft PowerShell hosts
+Command-line logging evasion
+
+Day 2:
+Windows Management Instrumentation (WMI)
+Interacting with WMI
+Querying WMI and discovery
+Eventing
+Attacks/defenses
+Active Directory
+Interacting with Active Directory
+LDAP search filters
+Active Directory ACLs
+Command and control
+PowerView "PowerUsage"
+
+Day 3: 
+Reflection
+Internal .NET member access/invocation
+In-memory .NET assembly loading
+Add-Type internals, host footprint, and evasion strategies
+Dynamic code generation
+Low-level, Win32 Interop
+P/Invoke and Win32 API basics
+Borrowing internal methods
+PSReflect
+
+Day 4:
+PowerShell Prevention - Implementation, Auditing, and Bypasses
+Constrained Language Mode
+Just Enough Administration (JEA)
+Downgrade attack mitigation
+Anti-malware Scan Interface (AMSI)
+Exploiting code injection vulnerabilities
+Code signing and trust enforcement
+PowerShell Detection - Implementation, Auditing, and Bypasses
+Classic and modern event logs
+Event Tracing for Windows (ETW)
