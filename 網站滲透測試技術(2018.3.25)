@@ -55,3 +55,74 @@ A9:2017-Using Components with Known Vulnerabilities
 A10:2017-Insufficient Logging&Monitoring
 
 DVWA實戰
+
+
+
+========================================================
+網站滲透測試實務入門 
+陳明照  出版商:碁峰  出版日期:2014-10-28
+
+第一章 關於滲透測試
+滲透測試的目的
+理論中的滲透測試
+我眼中的滲透測試
+滲透測試入門知識
+為什麼只是網站滲透測試
+
+第二章 滲透測試基本程序
+執行步驟
+記得先取得僱主的同意書（授權書）
+測試程序的PDCA
+
+第三章 滲透測試練習環境
+線上提供的滲透測試網站
+自建模擬測試環境
+使用真實站台環境
+準備滲透工具執行環境
+
+第四章 網站弱點概述
+OWASP TOP 10
+其他常見網頁程式弱點
+
+第五章 資訊蒐集
+nslookup
+whois
+Google Hacking
+SiteDigger
+theHarvester.py
+HTTrack
+DirBuster
+線上漏洞資料庫
+
+第六章 網站探測及弱點評估
+NMAP
+OWASP ZAP
+w3af
+MSBSA
+wFetch
+
+第七章 網站滲透
+關於LOCAL Proxy
+WebScarab
+ZAP
+BurpSuite
+thc-hydra
+SQLMap
+
+第八章 離線密碼破解
+線上猜解
+RainbowCrack
+John the Ripper
+
+第九章 滲透測試報告
+先備妥滲透測試紀錄
+撰寫滲透測試報告書
+報告書的撰寫建議
+
+第十章 持續精進技巧
+
+附錄一：滲透測試足跡蒐集檢查表
+附錄二：滲透測試同意書（範本）
+附錄三：滲透測試計畫書(範本)
+附錄四：滲透測試報告書(範本)
+附錄五：滲透測試紀錄(範本)
