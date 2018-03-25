@@ -67,3 +67,5 @@ A10:2017-Insufficient Logging&Monitoring
 
 
 DVWA實戰
+
+https://www.exploit-db.com/docs/english/44319-web-application-security-testing.pdf
