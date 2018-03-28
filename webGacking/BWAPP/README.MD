@@ -1,8 +1,6 @@
-bwapp
+# / A1 - Injection /
 
-/ A1 - Injection /
-
-HTML Injection - Reflected (GET)
+HTML Injection - Reflected (GET) https://www.youtube.com/watch?v=q4SVMPGASIU
 
 HTML Injection - Reflected (POST)
 
