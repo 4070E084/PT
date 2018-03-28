@@ -54,8 +54,6 @@ Without account
 
 Changing password
 
-# webgoatPHP==>https://github.com/shivamdixit/WebGoatPHP
-
 # webgoat.NET
 
 
@@ -66,6 +64,12 @@ Changing password
 * Download zip: https://github.com/jerryhoff/WebGoat.NET/zipball/master
 
 ****************************************************************************
+
+# webgoatPHP==>https://github.com/shivamdixit/WebGoatPHP
+
+# NodeGoat ==>https://github.com/OWASP/NodeGoat
+
+# railsgoat ==>https://railsgoat.cktricky.com/
 
 # bwapp
 
