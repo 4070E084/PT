@@ -54,6 +54,19 @@ Without account
 
 Changing password
 
+# webgoatPHP==>https://github.com/shivamdixit/WebGoatPHP
+
+# webgoat.NET
+
+
+***************************** Webgoat.NET **********************************
+
+* Source Code: https://github.com/jerryhoff/WebGoat.NET
+
+* Download zip: https://github.com/jerryhoff/WebGoat.NET/zipball/master
+
+****************************************************************************
+
 # bwapp
 
 # OWASP MutillidaeII(2018-03-12::2.6.60版)
