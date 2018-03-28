@@ -52,7 +52,8 @@ https://sourceforge.net/projects/mutillidae/files/
 Web Pen Testing Instructional Videos: http://www.youtube.com/user/webpwnized/
 
 ## A1 - Injection (SQL)
-類別1	類別2
+
+
 SQLi - Extract Data	User Info (SQL)
 SQLi - Bypass Authentication	Login
 SQLi - Insert Injection	Add to your blog
