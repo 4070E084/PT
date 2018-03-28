@@ -19,7 +19,7 @@ Mail Header Injection (SMTP)
 
 OS Command Injection
 
-OS Command Injection - Blind
+OS Command Injection - Blind:https://www.youtube.com/watch?v=NRHG_WChdXw
 
 PHP Code Injection
 
