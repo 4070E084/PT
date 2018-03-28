@@ -83,6 +83,7 @@ Text File Viewer
 Buffer Overflow	Repeater
 Capture Data Page	Set Background Color
 CBC-bit Flipping	
+
 Command Injection	DNS Lookup
 DNS Lookup (SOAP Web Service)
 Frame Source Injection	Document Viewer
