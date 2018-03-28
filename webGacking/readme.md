@@ -34,15 +34,24 @@ XXE
 -->Bypass front-end restrictions
 -->HTML tampering
 
-WebGoat Challenge
+## WebGoat Challenge
+
 Admin lost password
+
 Get it for free
+
 Photo comments
+
 Voting
+
 Without password
+
 Creating a new account
+
 Admin password reset
+
 Without account
+
 Changing password
 
 # bwapp
