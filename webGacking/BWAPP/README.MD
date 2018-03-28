@@ -1,3 +1,6 @@
+
+https://www.youtube.com/playlist?list=PLb5P0I7Dt6Rb4x-_7hNGc5qA5xUXbUUGD
+
 # / A1 - Injection /
 
 HTML Injection - Reflected (GET) https://www.youtube.com/watch?v=q4SVMPGASIU
