@@ -1,4 +1,6 @@
 
+http://www.mmebvba.com/sites/default/files/downloads/vulnerabilities.txt
+
 https://www.youtube.com/playlist?list=PLb5P0I7Dt6Rb4x-_7hNGc5qA5xUXbUUGD
 
 # / A1 - Injection /
@@ -15,7 +17,9 @@ iFrame Injection
 
 LDAP Injection (Search)
 
-Mail Header Injection (SMTP)
+http://www.blackhat.com/presentations/bh-europe-08/Alonso-Parada/Whitepaper/bh-eu-08-alonso-parada-WP.pdf
+
+Mail Header Injection (SMTP):https://www.youtube.com/watch?v=3JvonYzpmV8
 
 OS Command Injection
 
