@@ -362,8 +362,7 @@ https://sourceforge.net/projects/mutillidae/files/
 Web Pen Testing Instructional Videos: http://www.youtube.com/user/webpwnized/
 
 ## A1 - Injection (SQL)
-
-
+```
 SQLi - Extract Data	User Info (SQL)
 SQLi - Bypass Authentication	Login
 SQLi - Insert Injection	Add to your blog
@@ -379,9 +378,9 @@ Via JavaScript Object Notation (JSON)	Pen Test Tool Lookup
 Pen Test Tool Lookup (AJAX)
 Via SOAP Web Service	Lookup User
 Via REST Web Service	User Account Management
-
+```
 ## A1 - Injection (Other)
-
+```
 Application Log Injection	Add to your blog
 Document Viewer
 Capture Data Page
@@ -393,7 +392,6 @@ Text File Viewer
 Buffer Overflow	Repeater
 Capture Data Page	Set Background Color
 CBC-bit Flipping	
-
 Command Injection	DNS Lookup
 DNS Lookup (SOAP Web Service)
 Frame Source Injection	Document Viewer
@@ -435,10 +433,10 @@ XML External Entity Injection	XML Validator
 XML Entity Expansion	XML Validator
 XML Injection	XML Validator
 XPath Injection	User Info (XPath)
-
+```
 
 ## A2 - Broken Authentication and Session Management
-
+```
 Authentication Bypass	Via Brute Force	Login
 	Via Cookies	
 	Via SQL Injection	Login
@@ -447,10 +445,10 @@ Login
 Via CBC-bit Flipping	
 Username Enumeration	Login
 User Account Management (REST Web Service)	
-
+```
 
 ## A3 - Sensitive Data Exposure
-
+```
 Information Disclosure	PHP MyAdmin Console
 PHP Info Page
 Robots.txt
@@ -468,11 +466,13 @@ Robots.txt
 Platform Path Disclosure	PHP MyAdmin Console
 PHP Info Page
 SSL Misconfiguration
-
+```
 ## A4 - XML External Entitie
+```
 XML External Entity Injection	XML Validator
-
+```
 ## A5 - Broken Access Control
+```
 Insecure Direct Object References	
 Local File Inclusion
 Remote File Inclusion
@@ -483,10 +483,10 @@ Missing Function Level Access Contro
 Cookies as Auth Tokens
 “Secret" Administrative Pages
 Robots.txt
-
+```
 
 ## A6 - Security Misconfiguration
-
+```
 Directory Browsing	Method Tampering (GET for POST)
 Add to your blog
 User Info (SQL)
@@ -502,9 +502,9 @@ Robots.txt
 Cache-Control
 Click-Jacking
 Cross-Site Framing (Third-Party Framing)
-
+```
 ## A7 - Cross Site Scripting (XSS)
-
+```
 Reflected (First Order)	DNS Lookup
 Pen Test Tool Lookup
 Text File Viewer
@@ -568,19 +568,19 @@ User Info (XPath)
 Poll Question
 Register User
 Password Generator
-
+```
 ## A8 - Insecure Deserialization
-
+```
 A8 - Insecure Deserialization
-
+```
 ## A9 - Using Components with Known Vulnerabilities
-
+```
 PHP MyAdmin Console
 PHP Info Page
 CBC-bit Flipping
 SSL Misconfiguration
-
+```
 ## A10 - Insufficient Logging and Monitoring
-
+```
 A10 - Insufficient Logging and Monitoring
-
+```
